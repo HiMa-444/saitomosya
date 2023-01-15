@@ -1,0 +1,258 @@
+.header-menu {
+    display: block;
+  }
+.humburger {
+    display: none;
+  }
+body {
+  margin: 0;
+}
+.body-chi {
+  width: 100vw;
+  overflow: hidden;
+}
+.header {
+  width: 100%;
+  display: flex;
+  position: relative;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-img:hover {
+  opacity: 0.8;
+}
+.header-img {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.header-img-cld {
+  width: 185px;
+  height: 20px;
+}
+.header-menu {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-menu li {
+  margin-right: 40px;
+  list-style: none;
+  font-size: xx-small;
+}
+.menu-eng {
+  font-size: small;
+  font-weight: bold;
+}
+.menus {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.menus:hover,.menu-6:hover {
+  opacity: 0.7;
+}
+.menu-6 {
+  font-size: small;
+  color: white;
+  background-color: orange;
+  padding: 15px 20px;
+  border-radius: 21px;
+  text-decoration: none;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 20px;
+  left: 200px;
+  max-width: 1100px;
+}
+.human-img {
+  position: relative;
+  top: -10px;
+  left: 450px;
+}
+.middle-sen {
+  position: relative;
+  top: -800px;
+}
+.sen-top {
+  display: flex;
+  position: relative;
+  left: 120;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+}
+.imgs3 {
+  display: flex;
+  position:relative;
+  top: 10px;
+  align-items: center;
+}
+.sen2-3 {
+  display: flex;
+  position: relative;
+  top: 30px;
+}
+.sen-2:hover,.sen-3:hover {
+  opacity: 0.7;
+}
+.sen-2 {
+  padding: 15px 20px;
+  border-radius: 29px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+.sen-3 {
+  padding: 15px 20px;
+  border-radius: 29px;
+  background-color: white;
+  border: 2px solid;
+  border-color: lightgray;
+  text-decoration: none;
+  color: black;
+}
+.sen-4 {
+  position: relative;
+  top: 80px;
+  left: -40px;
+  font-size: x-small;
+  color: gray;
+  list-style: none;
+}
+.bottom-group {
+  width: 100vw;
+  position: relative;
+  bottom: 680px;
+  display: flex;
+  justify-content: space-around;
+  background-color: orange;
+  align-items: center;
+}
+.btm-video {
+  display: flex;
+  width: 50%;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.bottom-sen {
+  width: 488px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.bottom-sen a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 1080px) {
+  .header {
+    position: fixed;
+    height: 60px;
+    align-items: center;
+    background-color: white;
+    z-index: 20;
+  }
+  .header-menu {
+    display: none;
+  }
+  .humburger {
+    display: block;
+  }
+  .humburger-tab {
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+    list-style: none;
+    position: relative;
+    right: 30px;
+  }
+  .humburger-tab span {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: black;
+  }
+  .hum-1 {
+    top: 5px;
+  }
+  .hum-2 {
+    top: 15px;
+  }
+  .hum-3 {
+    top: 25px;
+  }
+  .cross .hum-1 {
+    transform: rotate(45deg);
+    top: 15px;
+  }
+  .cross .hum-2 {
+    display: none;
+  }
+  .cross .hum-3 {
+    transform: rotate(-45deg);
+    top: 15px;
+  }
+  .hided {
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    top: 60px;
+    left: 3000px;
+    background-color: black;
+    opacity: 0.75;
+    transition-duration: 1s;
+  }
+  .view {
+    left: 0;
+    transition-duration: 1s;
+  }
+  .hided-child {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hided-child a {
+    margin-top: 10px;
+  }
+  .hided-child a:hover {
+    opacity: 0.5;
+  }
+  .hided-child  p {
+    color: white;
+    font-weight: bold;
+  }
+  .hided-child  div {
+    color: orange;
+    font-size: small;
+  }
+  .menu-last {
+    margin: 0 auto;
+    width: 250px;
+    border-radius: 30px;
+    background-color: orange;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .bottom-group {
+    flex-direction: column;
+  }
+  .btm-video {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 320px) {
+}
